@@ -3,6 +3,9 @@ package model;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
+import lombok.Getter;
+
+@Getter
 public class Movimentacao {
 	private Veiculo veiculo;
     private Vaga vaga;
@@ -33,24 +36,6 @@ public class Movimentacao {
         vaga.setOcupada(false);
     }
 
-    public Veiculo getVeiculo() {
-        return veiculo;
-    }
-    public Vaga getVaga() {
-        return vaga;
-    }
-
-    public LocalDateTime getDataEntrada() {
-        return dataEntrada;
-    }
-
-    public LocalDateTime getDataSaida() {
-        return dataSaida;
-    }
-
-    public double getValorPago() {
-        return valorPago;
-    }
     @Override
     public String toString() {
 
